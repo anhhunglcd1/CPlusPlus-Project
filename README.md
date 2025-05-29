@@ -1,58 +1,58 @@
-📌 Giới thiệu
+📌 **Giới thiệu**
 
 Dự án xây dựng một hệ thống đăng ký, đăng nhập và quản lý ví điểm cho người dùng. Bao gồm 2 vai trò chính:
 
-Người dùng thường: có thể đăng ký tài khoản, đăng nhập, đổi mật khẩu, chuyển điểm, và xem lịch sử giao dịch.
+-Người dùng thường: có thể đăng ký tài khoản, đăng nhập, đổi mật khẩu, chuyển điểm, và xem lịch sử giao dịch.
 
-Quản trị viên (admin): có thể tạo tài khoản admin, chỉnh sửa thông tin người dùng, xóa tài khoản, chuyển điểm, và xem danh sách người dùng.
+-Quản trị viên (admin): có thể tạo tài khoản admin, chỉnh sửa thông tin người dùng, xóa tài khoản, chuyển điểm, và xem danh sách người dùng.
 
-📋 Đặc tả chức năng
+📋 **Đặc tả chức năng**
 
-🔐 Chức năng Đăng ký / Đăng nhập
+🔐 **Chức năng Đăng ký / Đăng nhập*
 
-Đăng ký tài khoản mới: nhập tên đăng nhập, tên đầy đủ, có thể để trống mật khẩu để hệ thống tự sinh.
+-Đăng ký tài khoản mới: nhập tên đăng nhập, tên đầy đủ, có thể để trống mật khẩu để hệ thống tự sinh.
 
-Đăng nhập bằng username + mật khẩu.
+-Đăng nhập bằng username + mật khẩu.
 
-Nếu mật khẩu là tự sinh, hệ thống sẽ yêu cầu đổi trong lần đăng nhập đầu tiên.
+-Nếu mật khẩu là tự sinh, hệ thống sẽ yêu cầu đổi trong lần đăng nhập đầu tiên.
 
-📁 Quản lý tài khoản
+📁 **Quản lý tài khoản*
 
 Người dùng có thể:
 
-Xem thông tin tài khoản
+-Xem thông tin tài khoản
 
-Đổi mật khẩu (ẩn bằng dấu *)
+-Đổi mật khẩu (ẩn bằng dấu *)
 
-Cập nhật tên
+-Cập nhật tên
 
-Xem lịch sử giao dịch
+-Xem lịch sử giao dịch
 
-Chuyển điểm sang ví khác (OTP xác minh)
+-Chuyển điểm sang ví khác (OTP xác minh)
 
-Admin có thể:
+-Admin có thể:
 
-Xem danh sách tài khoản
+-Xem danh sách tài khoản
 
-Tạo tài khoản admin khác
+-Tạo tài khoản admin khác
 
-Chỉnh sửa tên người dùng (không đổi username hoặc mật khẩu)
+-Chỉnh sửa tên người dùng (không đổi username hoặc mật khẩu)
 
-Xem thông tin người dùng
+-Xem thông tin người dùng
 
-Xóa tài khoản (trừ chính mình)
+-Xóa tài khoản (trừ chính mình)
 
-Chuyển điểm cho người dùng khác
+-Chuyển điểm cho người dùng khác
 
-🛠️ Hướng dẫn cài đặt & dịch chương trình
+🛠️ **Hướng dẫn cài đặt & dịch chương trình**
 
-1. Yêu cầu
+1. **Yêu cầu*
 
-Visual Studio 2022 (hoặc IDE C++ hỗ trợ C++17)
+-Visual Studio 2022 (hoặc IDE C++ hỗ trợ và ISO C++14 Standard)
 
 Không yêu cầu thư viện ngoài
 
-2. Cấu trúc thư mục
+2. **Cấu trúc thư mục*
 
 ├── Auth.cpp
 ├── Data_io.cpp
@@ -65,19 +65,19 @@ Không yêu cầu thư viện ngoài
 
 3. Cách dịch chương trình
 
-Tạo project mới trên Visual Studio 2022 (Console App, Empty Project)
+-Tạo project mới trên Visual Studio 2022 (Console App, Empty Project)
 
-Thêm tất cả 7 file .cpp vào project
+-Thêm tất cả 7 file .cpp vào project
 
-Đảm bảo file Main.cpp là file chính (Startup File)
+-Đảm bảo file Main.cpp là file chính (Startup File)
 
-Build → Run (Ctrl + F5)
+-Build → Run (Ctrl + F5)
 
-▶️ Cách chạy chương trình
+▶️ **Cách chạy chương trình**
 
 Khi chạy lần đầu:
 
-Hệ thống tự tạo tài khoản admin mặc định:
+-Hệ thống tự tạo tài khoản admin mặc định:
 
 Username: admin
 Password: admin
@@ -85,6 +85,8 @@ Password: admin
 Menu chính:
 
 1. Register    2. Login    0. Exit
+
+
 
 Sau khi đăng nhập:
 
@@ -100,7 +102,7 @@ Quản trị viên:
 3. Edit User      4. View User Info
 5. Transfer Points   6. Delete User
 
-🔒 Bảo mật
+🔒 **Bảo mật**
 
 Mật khẩu được mã hóa bằng std::hash
 
@@ -108,10 +110,9 @@ OTP được sinh ngẫu nhiên khi thực hiện chuyển điểm hoặc thao t
 
 Mật khẩu nhập vào được ẩn bằng dấu *
 
-📚 Tài liệu tham khảo
+📚 **Tài liệu tham khảo**
 
-C++ reference – <conio.h> & _getch()
+https://stackoverflow.com/
+https://chatgpt.com/
 
-CPP Reference - std::hash
 
-Tài liệu bài giảng môn Lập trình C++ cơ bản
