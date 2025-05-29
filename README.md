@@ -119,4 +119,5 @@ Mật khẩu nhập vào được ẩn bằng dấu *
 - https://www.youtube.com/watch?v=fTdkqOS5_ro
 - https://www.geeksforgeeks.org/generate-one-time-password-unique-identification-url/
 - https://www.draytek.com/support/knowledge-base/4923 (tham khảo giao diện)
+- https://www.youtube.com/watch?v=TDR_jECRHpg
 
