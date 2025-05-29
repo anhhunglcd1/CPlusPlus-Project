@@ -8,7 +8,7 @@ Dự án xây dựng một hệ thống đăng ký, đăng nhập và quản lý
 
 📋 **Đặc tả chức năng**
 
-🔐 **Chức năng Đăng ký / Đăng nhập*
+🔐 *Chức năng Đăng ký / Đăng nhập*
 
 -Đăng ký tài khoản mới: nhập tên đăng nhập, tên đầy đủ, có thể để trống mật khẩu để hệ thống tự sinh.
 
@@ -16,7 +16,7 @@ Dự án xây dựng một hệ thống đăng ký, đăng nhập và quản lý
 
 -Nếu mật khẩu là tự sinh, hệ thống sẽ yêu cầu đổi trong lần đăng nhập đầu tiên.
 
-📁 **Quản lý tài khoản*
+📁 *Quản lý tài khoản*
 
 Người dùng có thể:
 
@@ -46,7 +46,7 @@ Người dùng có thể:
 
 🛠️ **Hướng dẫn cài đặt & dịch chương trình**
 
-1. **Yêu cầu*
+1. *Yêu cầu*
 
 -Visual Studio 2022 (hoặc IDE C++ hỗ trợ và ISO C++14 Standard)
 
