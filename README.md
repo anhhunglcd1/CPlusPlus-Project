@@ -113,6 +113,10 @@ Mật khẩu nhập vào được ẩn bằng dấu *
 📚 **Tài liệu tham khảo**
 
 https://stackoverflow.com/
+https://www.geeksforgeeks.org/
 https://chatgpt.com/
-
+https://www.youtube.com/watch?v=rkmxgfnj5yM&t=893s
+https://www.youtube.com/watch?v=fTdkqOS5_ro
+https://www.geeksforgeeks.org/generate-one-time-password-unique-identification-url/
+https://www.draytek.com/support/knowledge-base/4923 (tham khảo giao diện)
 
