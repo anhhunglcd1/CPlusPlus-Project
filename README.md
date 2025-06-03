@@ -1,114 +1,157 @@
-📌 **Giới thiệu**
+✨**1. Giới thiệu dự án**
+📌 **Tên dự án:**
+Hệ thống đăng nhập, đăng ký tài khoản và quản lý ví điểm thưởng
 
-Dự án xây dựng một hệ thống đăng ký, đăng nhập và quản lý ví điểm cho người dùng. Bao gồm 2 vai trò chính:
+📝 **Mô tả:**
+Dự án xây dựng một hệ thống phần mềm trên nền tảng C++ hỗ trợ các chức năng:
 
--Người dùng thường: có thể đăng ký tài khoản, đăng nhập, đổi mật khẩu, chuyển điểm, và xem lịch sử giao dịch.
+📝 Đăng ký tài khoản mới (User Registration)
 
--Quản trị viên (admin): có thể tạo tài khoản admin, chỉnh sửa thông tin người dùng, xóa tài khoản, chuyển điểm, và xem danh sách người dùng.
+🔑 Đăng nhập tài khoản (Login)
 
-📋 **Đặc tả chức năng**
+👤 Quản lý thông tin cá nhân (Profile)
 
-🔐 *Chức năng Đăng ký / Đăng nhập*
+💰 Quản lý ví điểm thưởng (Wallet)
 
--Đăng ký tài khoản mới: nhập tên đăng nhập, tên đầy đủ, có thể để trống mật khẩu để hệ thống tự sinh.
+🔄 Thực hiện các giao dịch chuyển điểm giữa các ví (Transfer Points)
 
--Đăng nhập bằng username + mật khẩu.
+🔐 Xác thực giao dịch, đổi thông tin bằng mã OTP (OTP Verification)
 
--Nếu mật khẩu là tự sinh, hệ thống sẽ yêu cầu đổi trong lần đăng nhập đầu tiên.
+🛠️ Chức năng quản trị viên (Admin): quản lý, chỉnh sửa, xóa tài khoản, xem lịch sử giao dịch...
 
-📁 *Quản lý tài khoản*
+👥 **2. Giới thiệu thành viên và phân công công việc**
+Nhóm thực hiện: 2 thành viên
 
-Người dùng có thể:
+STT	👨‍💻 Họ và tên	📝 Công việc được giao
+1	[Tên thành viên 1]	- Thiết kế, xây dựng giao diện menu, luồng đăng nhập/đăng ký
+- Xử lý quản lý thông tin tài khoản, đổi mật khẩu, xác thực OTP
+- Tham gia xây dựng giao diện quản lý tài khoản cho admin
+2	[Tên thành viên 2]	- Thiết kế và cài đặt chức năng quản lý ví, giao dịch chuyển điểm
+- Quản lý lịch sử giao dịch, lưu trữ dữ liệu ra file
+- Tham gia xây dựng chức năng chỉnh sửa, xóa user, backup dữ liệu
 
--Xem thông tin tài khoản
+*️⃣ Mỗi thành viên đều tham gia test, viết tài liệu và hoàn thiện báo cáo.
 
--Đổi mật khẩu (ẩn bằng dấu *)
+📋 **3. Bản phân tích, đặc tả chức năng**
+🎯 **Chức năng chính**
+📝 **Đăng ký tài khoản:**
+- Nhập username, mật khẩu, họ tên. Kiểm tra trùng lặp, lưu nếu hợp lệ.
 
--Cập nhật tên
+🔑 **Đăng nhập:**
+- Nhập username, mật khẩu để truy cập hệ thống.
 
--Xem lịch sử giao dịch
+👤 **Quản lý tài khoản cá nhân:**
+- Xem thông tin cá nhân, đổi mật khẩu (OTP), đổi họ tên (OTP).
 
--Chuyển điểm sang ví khác (OTP xác minh)
+💰 **Quản lý ví điểm thưởng:**
+- Xem số dư, lịch sử giao dịch.
 
--Admin có thể:
+🔄 **Giao dịch chuyển điểm:**
+- Chuyển điểm sang ví khác (kiểm tra số dư, OTP), ghi lại lịch sử giao dịch hai chiều.
 
--Xem danh sách tài khoản
+🛠️ **Quản trị viên (admin):**
 
--Tạo tài khoản admin khác
+- Tạo tài khoản mới cho user khác
 
--Chỉnh sửa tên người dùng (không đổi username hoặc mật khẩu)
+- Chỉnh sửa thông tin tài khoản (đổi tên, đổi mật khẩu – cần xác nhận OTP)
 
--Xem thông tin người dùng
+- Xóa tài khoản
 
--Xóa tài khoản (trừ chính mình)
+- Xem danh sách người dùng
 
--Chuyển điểm cho người dùng khác
+- Xem và kiểm tra lịch sử giao dịch của bất kỳ user nào
 
-🛠️ **Hướng dẫn cài đặt & dịch chương trình**
+💾 **Sao lưu dữ liệu:**
+- Tự động sao lưu dữ liệu mỗi lần chạy chương trình.
 
-1. *Yêu cầu*
+📦 **4. Hướng dẫn tải, biên dịch, các tập tin và thư viện**
+📂 **Cấu trúc tập tin:**
 
--Visual Studio 2022 (hoặc IDE C++ hỗ trợ và ISO C++14 Standard)
+- Main.cpp: Chương trình chính, luồng điều khiển menu
 
-Không yêu cầu thư viện ngoài
+- Auth.cpp: Xử lý đăng nhập, đăng ký, xác thực OTP
 
-2. **Cấu trúc thư mục*
+- Data_io.cpp: Đọc/ghi dữ liệu người dùng và ví từ file
 
-├── Auth.cpp
-├── Data_io.cpp
-├── login_system.h
-├── Main.cpp
-├── Menu.cpp
-├── User_ops.cpp
-├── Utils.cpp
-└── users.dat (sẽ tự tạo nếu chưa có)
+- Menu.cpp: Giao diện menu cho user và admin
 
-3. Cách dịch chương trình
+- User_ops.cpp: Xử lý chức năng user/admin
 
--Tạo project mới trên Visual Studio 2022 (Console App, Empty Project)
+- Utils.cpp: Hàm tiện ích chung (OTP, password, clear screen...)
 
--Thêm tất cả 7 file .cpp vào project
+- login_system.h: Định nghĩa cấu trúc, khai báo hàm
 
--Đảm bảo file Main.cpp là file chính (Startup File)
+- users.dat, users.bak: File dữ liệu và backup
 
--Build → Run (Ctrl + F5)
+- pending_change.txt: Lưu thông tin các thay đổi cần xác nhận OTP
 
-▶️ **Cách chạy chương trình**
+📚 **Thư viện sử dụng:**
 
-Khi chạy lần đầu:
+- Chuẩn C++: <iostream>, <fstream>, <vector>, <string>, <iomanip>, <ctime>, <random>, <sstream>, <conio.h> (Windows)
 
--Hệ thống tự tạo tài khoản admin mặc định:
+- Không dùng thư viện ngoài
 
-Username: admin
-Password: admin
+⚙️ **Cách tải/chạy/dịch chương trình:**
 
-Menu chính:
+**Tải mã nguồn:**
 
-1. Register    2. Login    0. Exit
+- Copy tất cả file .cpp, .h vào cùng thư mục.
+
+**Dịch chương trình:**
+
+- Sử dụng Visual Studio 2022 hoặc g++ (chuẩn C++11 trở lên).
+
+**Nếu dùng dòng lệnh:**
+- css
+- Copy
+- Edit
+- g++ Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -o AccountManager
+- Nếu dùng Visual Studio: tạo project mới, thêm các file vào project, build là xong.
+
+- Không cần thư viện ngoài.
+
+▶️ **5. Hướng dẫn chạy chương trình & thao tác**
+🚀 **Khởi động chương trình:**
+
+- Lần đầu chạy, hệ thống tự tạo tài khoản nếu chưa có.
+
+📌 **Các thao tác cơ bản:**
+
+📝 **Đăng ký tài khoản mới:**
+
+- Chọn "Register", nhập username, họ tên, mật khẩu (có thể để trống để tự sinh).
+
+🔑 **Đăng nhập:**
+
+- Chọn "Login", nhập username, mật khẩu.
+
+👤 **Sau khi đăng nhập:**
+
+- User vào menu user: xem/đổi thông tin, chuyển điểm, xem lịch sử ví...
+
+- Admin vào menu admin: quản lý tài khoản, tạo/sửa/xóa user, xem lịch sử giao dịch hệ thống.
+
+🔄 **Chuyển điểm:**
+
+- Menu "Transfer Points" → nhập ID ví nhận → nhập số điểm → xác thực OTP.
+
+✏️ **Đổi thông tin cá nhân (họ tên/mật khẩu):**
+
+- Đổi xong sẽ sinh OTP, lần đăng nhập sau xác nhận OTP để áp dụng thay đổi.
+
+🗑️ **Xóa user:**
+
+- Chỉ admin được phép xóa tài khoản, không được xóa chính mình.
+
+💡 **Lưu ý:**
+
+- Dữ liệu lưu file, tự động sao lưu mỗi lần chạy.
+
+- Đổi tên/mật khẩu do admin thao tác hộ cần xác nhận OTP khi user login lần sau.
+
+- Chạy hoàn toàn trên console (dòng lệnh).
 
 
-
-Sau khi đăng nhập:
-
-Người dùng:
-
-1. View Profile   2. Change Password
-3. Update Name    4. Transaction History
-5. Transfer Points
-
-Quản trị viên:
-
-1. List Users     2. Create Admin
-3. Edit User      4. View User Info
-5. Transfer Points   6. Delete User
-
-🔒 **Bảo mật**
-
-Mật khẩu được mã hóa bằng std::hash
-
-OTP được sinh ngẫu nhiên khi thực hiện chuyển điểm hoặc thao tác quản trị quan trọng
-
-Mật khẩu nhập vào được ẩn bằng dấu *
 
 📚 **Tài liệu tham khảo**
 
