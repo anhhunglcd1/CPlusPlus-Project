@@ -1,9 +1,9 @@
 ✨**1. Giới thiệu dự án**
 📌 **Tên dự án:**
-Hệ thống đăng nhập, đăng ký tài khoản và quản lý ví điểm thưởng
+- Hệ thống đăng nhập, đăng ký tài khoản và quản lý ví điểm thưởng
 
 📝 **Mô tả:**
-Dự án xây dựng một hệ thống phần mềm trên nền tảng C++ hỗ trợ các chức năng:
+- Dự án xây dựng một hệ thống phần mềm trên nền tảng C++ hỗ trợ các chức năng:
 
 📝 Đăng ký tài khoản mới (User Registration)
 
