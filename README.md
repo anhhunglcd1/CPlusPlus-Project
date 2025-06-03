@@ -23,7 +23,7 @@
 Nhóm thực hiện: 2 thành viên
 
 STT	👨‍💻 Họ và tên	📝 Công việc được giao
-1	[Tên thành viên 1]	- Thiết kế, xây dựng giao diện menu, luồng đăng nhập/đăng ký
+1	Phạm Ngọc Nghĩa	- Thiết kế, xây dựng giao diện menu, luồng đăng nhập/đăng ký
 - Xử lý quản lý thông tin tài khoản, đổi mật khẩu, xác thực OTP
 - Tham gia xây dựng giao diện quản lý tài khoản cho admin
 2	[Tên thành viên 2]	- Thiết kế và cài đặt chức năng quản lý ví, giao dịch chuyển điểm
