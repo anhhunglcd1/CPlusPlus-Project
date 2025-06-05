@@ -110,48 +110,50 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 
 🚪 **Menu chính**
 
-| **Chức năng**           |**Ý nghĩa**                          |
-|-------------------------|-------------------------------------|
-| **Register**            | Đăng ký tài khoản mới               |
-| **Login**               | Đăng nhập (dành cho cả admin & user)|
-| **Exit**                | Thoát chương trình                  |
+| **Chức năng**           |**Ý nghĩa**                                      |
+|-------------------------|-------------------------------------------------|
+| **Register**            | Đăng ký tài khoản mới                           |
+| **Login**               | Đăng nhập (dành cho cả admin & user)            |
+| **Exit**                | Thoát chương trình                              |
   
 👤 **User Menu**
-| **Chức năng**           |**Ý nghĩa**                  |
-|-------------------------|-----------------------------|
-| **View Profile**        | Xem thông tin tài khoản     | 
-| **Change Password**     | Đổi mật khẩu (yêu cầu OTP)  |
-| **Change Name**         | Đổi tên (yêu cầu OTP)       |
-| **Transaction History** | Xem lịch sử giao dịch điểm  |
-| **Transfer Points**     | Chuyển điểm cho user khác   |
-| **Logout**              | Đăng xuất                   |
+| **Chức năng**           |**Ý nghĩa**                                      |
+|-------------------------|-------------------------------------------------|
+| **View Profile**        | Xem thông tin tài khoản                         | 
+| **Change Password**     | Đổi mật khẩu (yêu cầu OTP)                      |
+| **Change Name**         | Đổi tên (yêu cầu OTP)                           |
+| **Transaction History** | Xem lịch sử giao dịch điểm                      |
+| **Transfer Points**     | Chuyển điểm cho user khác                       |
+| **Logout**              | Đăng xuất                                       |
 
 
 
 👑 **Admin Menu**
+| **Chức năng**           |**Ý nghĩa**                                      |
+|-------------------------|-------------------------------------------------|
+| **List Users**          | Danh sách tài khoản                             |
+| **Create User**         | Tạo user mới                                    |
+| **Edit User**           | Đổi tên/mật khẩu hộ user (user xác nhận qua OTP)|
+| **View User**           | Xem chi tiết thông tin user bất kỳ              |
+| **Transfer Points**     | Chuyển điểm (admin không bị trừ)                |
+| **Delete User**         | Xóa tài khoản user                              |
+| **View Reward Pool**    | Xem số điểm thưởng còn lại (tối đa 30 điểm)     |
+| **Logout**              | Đăng xuất admin                                 |
 
-- **List Users**       | Danh sách tài khoản
-- **Create User**      | Tạo user mới
-- **Edit User**        | Đổi tên/mật khẩu hộ user (user xác nhận qua OTP)
-- **View User**        | Xem chi tiết thông tin user bất kỳ
-- **Transfer Points**  | Chuyển điểm (admin không bị trừ)
-- **Delete User**      | Xóa tài khoản user
-- **View Reward Pool** | Xem số điểm thưởng còn lại
-- **Logout**           | Đăng xuất admin
+🎯 **Ghi chú sử dụng**
 
-🎯 Ghi chú sử dụng
-Mỗi thao tác quan trọng đều có xác nhận OTP hoặc backup dự phòng.
+- Mỗi thao tác quan trọng đều có xác nhận OTP hoặc backup dự phòng.
 
-Lịch sử giao dịch lưu rõ nguồn nhận/chuyển, minh bạch.
+- Lịch sử giao dịch lưu rõ nguồn nhận/chuyển, minh bạch.
 
-Giao diện menu căn chỉnh rõ ràng, dùng được cả trên Windows và Linux.
+- Giao diện menu căn chỉnh rõ ràng, dùng được cả trên Windows và Linux.
 
-Dữ liệu user, log, pool tự động lưu file, thuận tiện phục hồi.
+- Dữ liệu user, log, pool tự động lưu file, thuận tiện phục hồi.
 
 
 
 📚 **Tài liệu tham khảo**
-
+```bash
 - https://stackoverflow.com/
 - https://www.geeksforgeeks.org/
 - https://chatgpt.com/
@@ -160,4 +162,5 @@ Dữ liệu user, log, pool tự động lưu file, thuận tiện phục hồi.
 - https://www.geeksforgeeks.org/generate-one-time-password-unique-identification-url/
 - https://www.draytek.com/support/knowledge-base/4923 (tham khảo giao diện)
 - https://www.youtube.com/watch?v=TDR_jECRHpg
+```
 
