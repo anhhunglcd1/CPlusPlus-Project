@@ -14,7 +14,9 @@
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🧑‍💻**Phạm Ngọc Nghĩa**  | Thiết kế, xây dựng giao diện menu, luồng đăng nhập/đăng ký, xử lý quản lý thông tin tài khoản, đổi mật khẩu, xác thực OTP, tham gia xây dựng giao diện quản lý tài khoản cho admin.   |
 | 👨‍💻 **Nguyễn Đức Công**    | Thiết kế và cài đặt chức năng quản lý ví, giao dịch chuyển điểm, quản lý lịch sử giao dịch, lưu trữ dữ liệu ra file, tham gia xây dựng chức năng chỉnh sửa, xóa user, backup dữ liệu.|
-
+```bash
+https://github.com/anhhunglcd1/CPlusPlus-Project/commits/master/
+```
 ---
 
 ### 📑 Phân tích & Đặc tả chức năng
@@ -168,5 +170,6 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 ```bash
 - https://www.youtube.com/watch?v=TDR_jECRHpg
 ```
+
 
 
