@@ -110,14 +110,14 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 
 🚪 **Menu chính**
 
-1. Register    2. Login    0. Exit
-
-- **Register** | Đăng ký tài khoản mới
-- **Login**    | Đăng nhập (dành cho cả admin & user)
-- **Exit**     | Thoát chương trình
+| **Chức năng**           |**Ý nghĩa**                          |
+|-------------------------|-------------------------------------|
+| **Register**            | Đăng ký tài khoản mới               |
+| **Login**               | Đăng nhập (dành cho cả admin & user)|
+| **Exit**                | Thoát chương trình                  |
   
 👤 **User Menu**
-| **Chức năng**           |**Ý nghĩa*                   |
+| **Chức năng**           |**Ý nghĩa**                  |
 |-------------------------|-----------------------------|
 | **View Profile**        | Xem thông tin tài khoản     | 
 | **Change Password**     | Đổi mật khẩu (yêu cầu OTP)  |
