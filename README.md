@@ -8,7 +8,7 @@
 
 ---
 
-## 👨‍💻👩‍💻 Thành viên & phân công công việc
+### 👨‍💻👩‍💻 Thành viên & phân công công việc
 
 | Thành viên                | Công việc chính phụ trách                                                                                                                                                             |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -17,7 +17,7 @@
 
 ---
 
-## 📑 Phân tích & Đặc tả chức năng
+### 📑 Phân tích & Đặc tả chức năng
 
 ### 1️⃣ Đăng ký tài khoản
 - Nhập username (không trùng, không rỗng), họ tên, mật khẩu (ẩn hoặc auto-gen nếu để trống).
@@ -51,7 +51,7 @@
 
 ---
 
-## 🗂️ Cấu trúc thư mục & các file nguồn
+### 🗂️ Cấu trúc thư mục & các file nguồn
 
 | File                | Chức năng                                                         |
 |---------------------|-------------------------------------------------------------------|
@@ -69,7 +69,7 @@
 
 ---
 
-## ⚙️ Yêu cầu & Cách cài đặt
+### ⚙️ Yêu cầu & Cách cài đặt
 
 - **Hệ điều hành:** Windows hoặc Linux (test chuẩn trên cả hai)
 - **Trình biên dịch:** Visual Studio 2022, hoặc g++/clang++ mới
@@ -78,7 +78,7 @@
 
 ---
 
-## 📥 Cách tải, biên dịch và chạy chương trình
+### 📥 Cách tải, biên dịch và chạy chương trình
 
 ### 1️⃣ **Tải source code**
 
@@ -88,12 +88,12 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 ```
 ### 2️⃣ **Biên dịch**
 
-## 🖥️ **Visual Studio 2022**
+### 🖥️ **Visual Studio 2022**
 
 - Mở project, thêm toàn bộ file .cpp và .h vào project mới.
 - Nhấn Ctrl+Shift+B để Build Solution.
 
-## 🐧 **Linux (g++ khuyến nghị)**
+### 🐧 **Linux (g++ khuyến nghị)**
 ```bash
 - g++ -o wallet Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -std=c++17
 ```
@@ -103,17 +103,16 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 - **Windows:** nhấn F5 trong Visual Studio 2022.
 - **Linux:** Chạy lệnh: ./wallet
 
-## 🕹️ **Hướng dẫn sử dụng & thao tác chức năng**
+### 🕹️ **Hướng dẫn sử dụng & thao tác chức năng**
 
 ### 🚪 **Menu chính**
-
 | **Chức năng**           |**Ý nghĩa**                                      |
 |-------------------------|-------------------------------------------------|
 | **Register**            | Đăng ký tài khoản mới                           |
 | **Login**               | Đăng nhập (dành cho cả admin & user)            |
 | **Exit**                | Thoát chương trình                              |
   
-## 👤 **User Menu**
+### 👤 **User Menu**
 | **Chức năng**           |**Ý nghĩa**                                      |
 |-------------------------|-------------------------------------------------|
 | **View Profile**        | Xem thông tin tài khoản                         | 
@@ -125,7 +124,7 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 
 
 
-## 👑 **Admin Menu**
+### 👑 **Admin Menu**
 | **Chức năng**           |**Ý nghĩa**                                      |
 |-------------------------|-------------------------------------------------|
 | **List Users**          | Danh sách tài khoản                             |
