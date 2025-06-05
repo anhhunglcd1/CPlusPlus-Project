@@ -84,7 +84,79 @@
 
 Clone hoặc tải về từ GitHub:
 ```bash
-git clone https://github.com/tenkho/duan_login_wallet.git
+https://github.com/anhhunglcd1/CPlusPlus-Project.git
+```
+2️⃣ Biên dịch
+🖥️ Visual Studio 2022
+Mở project, thêm toàn bộ file .cpp và .h vào project mới.
+
+Nhấn Ctrl+Shift+B để Build Solution.
+
+🐧 Linux (g++ khuyến nghị)
+bash
+Copy
+Edit
+g++ -o wallet Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -std=c++17
+3️⃣ Chạy chương trình
+Windows: Chạy wallet.exe hoặc nhấn F5 trong Visual Studio.
+
+Linux: Chạy lệnh:
+
+bash
+Copy
+Edit
+./wallet
+🕹️ Hướng dẫn sử dụng & thao tác chức năng
+🚪 Menu chính
+pgsql
+Copy
+Edit
+1. Register    2. Login    0. Exit
+Register: Đăng ký tài khoản mới
+
+Login: Đăng nhập (dành cho cả admin & user)
+
+Exit: Thoát chương trình
+
+👤 User Menu
+View Profile | Xem thông tin tài khoản
+
+Change Password | Đổi mật khẩu (yêu cầu OTP)
+
+Change Name | Đổi tên (yêu cầu OTP)
+
+Transaction History | Xem lịch sử giao dịch điểm
+
+Transfer Points | Chuyển điểm cho user khác
+
+Logout | Đăng xuất
+
+👑 Admin Menu
+List Users | Danh sách tài khoản
+
+Create User | Tạo user mới
+
+Edit User | Đổi tên/mật khẩu hộ user (user xác nhận qua OTP)
+
+View User | Xem chi tiết thông tin user bất kỳ
+
+Transfer Points | Chuyển điểm (admin không bị trừ)
+
+Delete User | Xóa tài khoản user
+
+View Reward Pool | Xem số điểm thưởng còn lại
+
+Logout | Đăng xuất admin
+
+🎯 Ghi chú sử dụng
+Mỗi thao tác quan trọng đều có xác nhận OTP hoặc backup dự phòng.
+
+Lịch sử giao dịch lưu rõ nguồn nhận/chuyển, minh bạch.
+
+Giao diện menu căn chỉnh rõ ràng, dùng được cả trên Windows và Linux.
+
+Dữ liệu user, log, pool tự động lưu file, thuận tiện phục hồi.
+
 
 
 📚 **Tài liệu tham khảo**
