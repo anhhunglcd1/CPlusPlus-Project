@@ -80,25 +80,25 @@
 
 ## 📥 Cách tải, biên dịch và chạy chương trình
 
-### 1️⃣ Tải source code
+1️⃣ **Tải source code**
 
 **Clone hoặc tải về từ GitHub:**
 ```bash
 https://github.com/anhhunglcd1/CPlusPlus-Project.git
 ```
-###2️⃣ **Biên dịch**
+2️⃣ **Biên dịch**
 
-🖥️ Visual Studio 2022
+🖥️ **Visual Studio 2022**
 
 - Mở project, thêm toàn bộ file .cpp và .h vào project mới.
 
 - Nhấn Ctrl+Shift+B để Build Solution.
 
-🐧 Linux (g++ khuyến nghị)
+🐧 **Linux (g++ khuyến nghị)**
 
 - g++ -o wallet Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -std=c++17
 
-3️⃣ Chạy chương trình
+3️⃣ **Chạy chương trình**
 
 - Windows: nhấn F5 trong Visual Studio 2022.
 
@@ -106,47 +106,37 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 
 ./wallet
 
-🕹️ Hướng dẫn sử dụng & thao tác chức năng
-🚪 Menu chính
-pgsql
-Copy
-Edit
+🕹️ **Hướng dẫn sử dụng & thao tác chức năng**
+
+🚪 **Menu chính**
+
 1. Register    2. Login    0. Exit
-Register: Đăng ký tài khoản mới
+2. 
+- **Register** | Đăng ký tài khoản mới
 
-Login: Đăng nhập (dành cho cả admin & user)
+- **Login**    | Đăng nhập (dành cho cả admin & user)
 
-Exit: Thoát chương trình
+- **Exit**     | Thoát chương trình
 
-👤 User Menu
-View Profile | Xem thông tin tài khoản
+👤 **User Menu**
 
-Change Password | Đổi mật khẩu (yêu cầu OTP)
+- **View Profile**        | Xem thông tin tài khoản
+- **Change Password**     | Đổi mật khẩu (yêu cầu OTP)
+- **Change Name**         | Đổi tên (yêu cầu OTP)
+- **Transaction History** | Xem lịch sử giao dịch điểm
+- **Transfer Points**     | Chuyển điểm cho user khác
+- **Logout**              | Đăng xuất
 
-Change Name | Đổi tên (yêu cầu OTP)
+👑 **Admin Menu**
 
-Transaction History | Xem lịch sử giao dịch điểm
-
-Transfer Points | Chuyển điểm cho user khác
-
-Logout | Đăng xuất
-
-👑 Admin Menu
-List Users | Danh sách tài khoản
-
-Create User | Tạo user mới
-
-Edit User | Đổi tên/mật khẩu hộ user (user xác nhận qua OTP)
-
-View User | Xem chi tiết thông tin user bất kỳ
-
-Transfer Points | Chuyển điểm (admin không bị trừ)
-
-Delete User | Xóa tài khoản user
-
-View Reward Pool | Xem số điểm thưởng còn lại
-
-Logout | Đăng xuất admin
+- **List Users**       | Danh sách tài khoản
+- **Create User**      | Tạo user mới
+- **Edit User**        | Đổi tên/mật khẩu hộ user (user xác nhận qua OTP)
+- **View User**        | Xem chi tiết thông tin user bất kỳ
+- **Transfer Points**  | Chuyển điểm (admin không bị trừ)
+- **Delete User**      | Xóa tài khoản user
+- **View Reward Pool** | Xem số điểm thưởng còn lại
+- **Logout**           | Đăng xuất admin
 
 🎯 Ghi chú sử dụng
 Mỗi thao tác quan trọng đều có xác nhận OTP hoặc backup dự phòng.
