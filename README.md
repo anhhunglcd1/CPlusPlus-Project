@@ -117,7 +117,7 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 - **Exit**     | Thoát chương trình
   
 👤 **User Menu**
-|                                                       |
+| **Chức năng**           |**Ý nghĩa*                   |
 |-------------------------|-----------------------------|
 | **View Profile**        | Xem thông tin tài khoản     | 
 | **Change Password**     | Đổi mật khẩu (yêu cầu OTP)  |
