@@ -116,9 +116,8 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 - **Login**    | Đăng nhập (dành cho cả admin & user)
 - **Exit**     | Thoát chương trình
   
----
-
 👤 **User Menu**
+|                         |                             |
 |-------------------------|-----------------------------|
 | **View Profile**        | Xem thông tin tài khoản     | 
 | **Change Password**     | Đổi mật khẩu (yêu cầu OTP)  |
@@ -127,7 +126,7 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 | **Transfer Points**     | Chuyển điểm cho user khác   |
 | **Logout**              | Đăng xuất                   |
 
----
+
 
 👑 **Admin Menu**
 
