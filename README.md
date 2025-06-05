@@ -86,25 +86,25 @@
 ```bash
 https://github.com/anhhunglcd1/CPlusPlus-Project.git
 ```
-2️⃣ **Biên dịch**
+### 2️⃣ **Biên dịch**
 
-🖥️ **Visual Studio 2022**
+## 🖥️ **Visual Studio 2022**
 
 - Mở project, thêm toàn bộ file .cpp và .h vào project mới.
 - Nhấn Ctrl+Shift+B để Build Solution.
 
-🐧 **Linux (g++ khuyến nghị)**
+## 🐧 **Linux (g++ khuyến nghị)**
 
 - g++ -o wallet Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -std=c++17
 
-3️⃣ **Chạy chương trình**
+### 3️⃣ **Chạy chương trình**
 
 - Windows: nhấn F5 trong Visual Studio 2022.
 - Linux: Chạy lệnh: ./wallet
 
-🕹️ **Hướng dẫn sử dụng & thao tác chức năng**
+## 🕹️ **Hướng dẫn sử dụng & thao tác chức năng**
 
-🚪 **Menu chính**
+### 🚪 **Menu chính**
 
 | **Chức năng**           |**Ý nghĩa**                                      |
 |-------------------------|-------------------------------------------------|
@@ -112,7 +112,7 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 | **Login**               | Đăng nhập (dành cho cả admin & user)            |
 | **Exit**                | Thoát chương trình                              |
   
-👤 **User Menu**
+## 👤 **User Menu**
 | **Chức năng**           |**Ý nghĩa**                                      |
 |-------------------------|-------------------------------------------------|
 | **View Profile**        | Xem thông tin tài khoản                         | 
@@ -124,7 +124,7 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 
 
 
-👑 **Admin Menu**
+## 👑 **Admin Menu**
 | **Chức năng**           |**Ý nghĩa**                                      |
 |-------------------------|-------------------------------------------------|
 | **List Users**          | Danh sách tài khoản                             |
@@ -136,14 +136,14 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 | **View Reward Pool**    | Xem số điểm thưởng còn lại (tối đa 30 điểm)     |
 | **Logout**              | Đăng xuất admin                                 |
 
-🎯 **Ghi chú sử dụng**
+### 🎯 **Ghi chú sử dụng**
 
 - Mỗi thao tác quan trọng đều có xác nhận OTP hoặc backup dự phòng.
 - Lịch sử giao dịch lưu rõ nguồn nhận/chuyển, minh bạch.
 - Giao diện menu căn chỉnh rõ ràng, dùng được cả trên Windows và Linux.
 - Dữ liệu user, log, pool tự động lưu file, thuận tiện phục hồi.
 ---
-📚 **Tài liệu tham khảo**
+### 📚 **Tài liệu tham khảo**
 ```bash
 - https://stackoverflow.com/
 - https://www.geeksforgeeks.org/
