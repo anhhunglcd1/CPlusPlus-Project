@@ -144,7 +144,7 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 - Dữ liệu user, log, pool tự động lưu file, thuận tiện phục hồi.
 ---
 📚 **Tài liệu tham khảo**
-```bash
+
 - https://stackoverflow.com/
 - https://www.geeksforgeeks.org/
 - https://chatgpt.com/
@@ -153,5 +153,5 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 - https://www.geeksforgeeks.org/generate-one-time-password-unique-identification-url/
 - https://www.draytek.com/support/knowledge-base/4923 (tham khảo giao diện)
 - https://www.youtube.com/watch?v=TDR_jECRHpg
-```
+
 
