@@ -94,8 +94,9 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 - Nhấn Ctrl+Shift+B để Build Solution.
 
 ## 🐧 **Linux (g++ khuyến nghị)**
-
+```bash
 - g++ -o wallet Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -std=c++17
+```
 
 ### 3️⃣ **Chạy chương trình**
 
@@ -146,12 +147,26 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 ### 📚 **Tài liệu tham khảo**
 ```bash
 - https://stackoverflow.com/
+```
+```bash
 - https://www.geeksforgeeks.org/
+```
+```bash
 - https://chatgpt.com/
+```
+```bash
 - https://www.youtube.com/watch?v=rkmxgfnj5yM&t=893s
+```
+```bash
 - https://www.youtube.com/watch?v=fTdkqOS5_ro
+```
+```bash
 - https://www.geeksforgeeks.org/generate-one-time-password-unique-identification-url/
+```
+```bash
 - https://www.draytek.com/support/knowledge-base/4923 (tham khảo giao diện)
+```
+```bash
 - https://www.youtube.com/watch?v=TDR_jECRHpg
 ```
 
