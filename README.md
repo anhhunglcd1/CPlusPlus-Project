@@ -82,27 +82,27 @@
 
 ### 1️⃣ Tải source code
 
-Clone hoặc tải về từ GitHub:
+**Clone hoặc tải về từ GitHub:**
 ```bash
 https://github.com/anhhunglcd1/CPlusPlus-Project.git
 ```
-2️⃣ Biên dịch
+###2️⃣ **Biên dịch**
 
 🖥️ Visual Studio 2022
 
-Mở project, thêm toàn bộ file .cpp và .h vào project mới.
+- Mở project, thêm toàn bộ file .cpp và .h vào project mới.
 
-Nhấn Ctrl+Shift+B để Build Solution.
+- Nhấn Ctrl+Shift+B để Build Solution.
 
 🐧 Linux (g++ khuyến nghị)
 
-g++ -o wallet Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -std=c++17
+- g++ -o wallet Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -std=c++17
 
 3️⃣ Chạy chương trình
 
-Windows: Chạy wallet.exe hoặc nhấn F5 trong Visual Studio.
+- Windows: nhấn F5 trong Visual Studio 2022.
 
-Linux: Chạy lệnh:
+- Linux: Chạy lệnh:
 
 ./wallet
 
