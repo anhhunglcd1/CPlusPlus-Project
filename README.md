@@ -111,21 +111,19 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 🚪 **Menu chính**
 
 1. Register    2. Login    0. Exit
-2. 
+
 - **Register** | Đăng ký tài khoản mới
-
 - **Login**    | Đăng nhập (dành cho cả admin & user)
-
 - **Exit**     | Thoát chương trình
 
 👤 **User Menu**
-
-- **View Profile**        | Xem thông tin tài khoản
-- **Change Password**     | Đổi mật khẩu (yêu cầu OTP)
-- **Change Name**         | Đổi tên (yêu cầu OTP)
-- **Transaction History** | Xem lịch sử giao dịch điểm
-- **Transfer Points**     | Chuyển điểm cho user khác
-- **Logout**              | Đăng xuất
+|-------------------------|-----------------------------|
+| **View Profile**        | Xem thông tin tài khoản     | 
+| **Change Password**     | Đổi mật khẩu (yêu cầu OTP)  |
+| **Change Name**         | Đổi tên (yêu cầu OTP)       |
+| **Transaction History** | Xem lịch sử giao dịch điểm  |
+| **Transfer Points**     | Chuyển điểm cho user khác   |
+| **Logout**              | Đăng xuất                   |
 
 👑 **Admin Menu**
 
