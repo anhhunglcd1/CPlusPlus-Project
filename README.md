@@ -37,8 +37,8 @@
 - Ghi lại lịch sử giao dịch đầy đủ cho minh bạch.
 
 ### 5️⃣ Phân quyền
-- **Admin** có thể: tạo user, chỉnh sửa, xóa user, chuyển điểm không giới hạn, xem reward pool, xem chi tiết mọi user.
-- **Người dùng thường** chỉ thao tác trên tài khoản, ví và lịch sử của mình.
+- **Admin:** có thể tạo user, chỉnh sửa, xóa user, chuyển điểm không giới hạn, xem reward pool, xem chi tiết mọi user.
+- **Người dùng thường:** chỉ thao tác trên tài khoản, ví và lịch sử của mình.
 
 ### 6️⃣ Bảo mật & xác thực
 - Mật khẩu hash, không lưu plain text.
@@ -91,7 +91,6 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 🖥️ **Visual Studio 2022**
 
 - Mở project, thêm toàn bộ file .cpp và .h vào project mới.
-
 - Nhấn Ctrl+Shift+B để Build Solution.
 
 🐧 **Linux (g++ khuyến nghị)**
@@ -101,7 +100,6 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 3️⃣ **Chạy chương trình**
 
 - Windows: nhấn F5 trong Visual Studio 2022.
-
 - Linux: Chạy lệnh: ./wallet
 
 🕹️ **Hướng dẫn sử dụng & thao tác chức năng**
@@ -141,15 +139,10 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 🎯 **Ghi chú sử dụng**
 
 - Mỗi thao tác quan trọng đều có xác nhận OTP hoặc backup dự phòng.
-
 - Lịch sử giao dịch lưu rõ nguồn nhận/chuyển, minh bạch.
-
 - Giao diện menu căn chỉnh rõ ràng, dùng được cả trên Windows và Linux.
-
 - Dữ liệu user, log, pool tự động lưu file, thuận tiện phục hồi.
-
-
-
+---
 📚 **Tài liệu tham khảo**
 ```bash
 - https://stackoverflow.com/
