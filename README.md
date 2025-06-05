@@ -102,7 +102,7 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 
 - **Windows:** nhấn F5 trong Visual Studio 2022.
 - **Linux:** Chạy lệnh: ./wallet
-
+---
 ### 🕹️ **Hướng dẫn sử dụng & thao tác chức năng**
 
 ### 🚪 **Menu chính**
