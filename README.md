@@ -1,161 +1,90 @@
-✨**1. Giới thiệu dự án**
+# 🎁 HỆ THỐNG ĐĂNG NHẬP, ĐĂNG KÝ & QUẢN LÝ VÍ ĐIỂM THƯỞNG
 
-📌 **Tên dự án:**
-- Hệ thống đăng nhập, đăng ký tài khoản và quản lý ví điểm thưởng
+---
 
-📝 **Mô tả:**
+## 🚀 Giới thiệu dự án
 
-**Dự án xây dựng một hệ thống phần mềm trên nền tảng C++ hỗ trợ các chức năng:**
+**Hệ thống đăng nhập, đăng ký và quản lý ví điểm thưởng** là ứng dụng mô phỏng hệ thống quản lý tài khoản người dùng kèm ví điểm thưởng, với xác thực bảo mật, phân quyền và đầy đủ chức năng chuyển điểm, đổi thông tin, ghi log lịch sử.
 
-📝 Đăng ký tài khoản mới (User Registration)
+---
 
-🔑 Đăng nhập tài khoản (Login)
+## 👨‍💻👩‍💻 Thành viên & phân công công việc
 
-👤 Quản lý thông tin cá nhân (Profile)
+| Thành viên                | Công việc chính phụ trách                                                                                                                                                             |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🧑‍💻**Phạm Ngọc Nghĩa**  | Thiết kế, xây dựng giao diện menu, luồng đăng nhập/đăng ký, xử lý quản lý thông tin tài khoản, đổi mật khẩu, xác thực OTP, tham gia xây dựng giao diện quản lý tài khoản cho admin.   |
+| 👨‍💻 **Nguyễn Đức Công**    | Thiết kế và cài đặt chức năng quản lý ví, giao dịch chuyển điểm, quản lý lịch sử giao dịch, lưu trữ dữ liệu ra file, tham gia xây dựng chức năng chỉnh sửa, xóa user, backup dữ liệu.|
 
-💰 Quản lý ví điểm thưởng (Wallet)
+---
 
-🔄 Thực hiện các giao dịch chuyển điểm giữa các ví (Transfer Points)
+## 📑 Phân tích & Đặc tả chức năng
 
-🔐 Xác thực giao dịch, đổi thông tin bằng mã OTP (OTP Verification)
+### 1️⃣ Đăng ký tài khoản
+- Nhập username (không trùng, không rỗng), họ tên, mật khẩu (ẩn hoặc auto-gen nếu để trống).
+- Điểm thưởng được cộng tự động từ pool hệ thống.
 
-🛠️ Chức năng quản trị viên (Admin): quản lý, chỉnh sửa, xóa tài khoản, xem lịch sử giao dịch...
+### 2️⃣ Đăng nhập hệ thống
+- Đăng nhập bằng username và mật khẩu (ẩn).
+- Nếu có thao tác pending (đổi tên/mật khẩu do admin đổi hộ), sẽ phải xác nhận OTP ở lần đăng nhập tiếp theo.
 
-👥 **2. Giới thiệu thành viên và phân công công việc**
+### 3️⃣ Quản lý thông tin tài khoản
+- Xem, đổi tên, đổi mật khẩu (yêu cầu OTP với thao tác nhạy cảm).
+- Nếu mật khẩu là auto-generated, bắt buộc đổi mật khẩu sau lần đăng nhập đầu.
 
-Nhóm thực hiện: 2 thành viên
+### 4️⃣ Quản lý ví điểm & giao dịch
+- Mỗi user có ví với ID riêng, lưu số dư và điểm nguồn gốc pool.
+- Chuyển điểm qua wallet ID (không phân biệt hoa/thường).
+- Ghi lại lịch sử giao dịch đầy đủ cho minh bạch.
 
-STT	👨‍💻 Họ và tên	📝 Công việc được giao
+### 5️⃣ Phân quyền
+- **Admin** có thể: tạo user, chỉnh sửa, xóa user, chuyển điểm không giới hạn, xem reward pool, xem chi tiết mọi user.
+- **Người dùng thường** chỉ thao tác trên tài khoản, ví và lịch sử của mình.
 
-1.	Phạm Ngọc Nghĩa: Thiết kế, xây dựng giao diện menu, luồng đăng nhập/đăng ký,
-Xử lý quản lý thông tin tài khoản, đổi mật khẩu, xác thực OTP,
-Tham gia xây dựng giao diện quản lý tài khoản cho admin.
+### 6️⃣ Bảo mật & xác thực
+- Mật khẩu hash, không lưu plain text.
+- OTP xác nhận cho đổi tên/đổi mật khẩu quan trọng.
+- Giao dịch, thao tác lớn luôn được log hoặc xác thực lại.
 
-2.	Nguyễn Đức Công: Thiết kế và cài đặt chức năng quản lý ví, giao dịch chuyển điểm,
-Quản lý lịch sử giao dịch, lưu trữ dữ liệu ra file,
-Tham gia xây dựng chức năng chỉnh sửa, xóa user, backup dữ liệu.
+### 7️⃣ Lưu trữ, backup
+- Tự động backup dữ liệu người dùng trước mọi thao tác nguy hiểm.
+- Lịch sử giao dịch, trạng thái pool, thay đổi pending đều ghi file, dễ kiểm tra/phục hồi.
 
-*️⃣ Mỗi thành viên đều tham gia test, viết tài liệu và hoàn thiện báo cáo.
+---
 
-📋 **3. Bản phân tích, đặc tả chức năng**
-🎯 **Chức năng chính**
-📝 **Đăng ký tài khoản:**
-- Nhập username, mật khẩu, họ tên. Kiểm tra trùng lặp, lưu nếu hợp lệ.
+## 🗂️ Cấu trúc thư mục & các file nguồn
 
-🔑 **Đăng nhập:**
-- Nhập username, mật khẩu để truy cập hệ thống.
+| File                | Chức năng                                                         |
+|---------------------|-------------------------------------------------------------------|
+| `Main.cpp`          | Chương trình chính, menu ngoài, kiểm tra & khởi tạo admin         |
+| `Auth.cpp`          | Đăng ký, đăng nhập, xóa user, xác thực OTP                       |
+| `Data_io.cpp`       | Đọc, ghi dữ liệu user, reward pool, backup, quản lý file          |
+| `Menu.cpp`          | Xây dựng giao diện menu cho user & admin                         |
+| `User_ops.cpp`      | Đổi tên, đổi mật khẩu, chuyển điểm, log giao dịch, xác nhận OTP   |
+| `Utils.cpp`         | Tiện ích: sinh mật khẩu ngẫu nhiên, sinh OTP, hash, clear màn hình|
+| `login_system.h`    | Khai báo các struct, hàm chung dùng toàn bộ chương trình          |
+| `users.dat`         | Dữ liệu user (tạo tự động khi chạy chương trình)                  |
+| `reward_pool.dat`   | Số điểm thưởng còn lại trong pool                                 |
+| `pending_change.txt`| Log các thay đổi chờ xác nhận OTP                                 |
+| `users.bak`         | File backup dữ liệu user dự phòng                                 |
 
-👤 **Quản lý tài khoản cá nhân:**
-- Xem thông tin cá nhân, đổi mật khẩu (OTP), đổi họ tên (OTP).
+---
 
-💰 **Quản lý ví điểm thưởng:**
-- Xem số dư, lịch sử giao dịch.
+## ⚙️ Yêu cầu & Cách cài đặt
 
-🔄 **Giao dịch chuyển điểm:**
-- Chuyển điểm sang ví khác (kiểm tra số dư, OTP), ghi lại lịch sử giao dịch hai chiều.
+- **Hệ điều hành:** Windows hoặc Linux (test chuẩn trên cả hai)
+- **Trình biên dịch:** Visual Studio 2022, hoặc g++/clang++ mới
+- **Thư viện:** Chuẩn C++ (không cần thêm thư viện ngoài)
+- **Không cần cài thêm thư viện!**
 
-🛠️ **Quản trị viên (admin):**
+---
 
-- Tạo tài khoản mới cho user khác
+## 📥 Cách tải, biên dịch và chạy chương trình
 
-- Chỉnh sửa thông tin tài khoản (đổi tên, đổi mật khẩu – cần xác nhận OTP)
+### 1️⃣ Tải source code
 
-- Xóa tài khoản
-
-- Xem danh sách người dùng
-
-- Xem và kiểm tra lịch sử giao dịch của bất kỳ user nào
-
-💾 **Sao lưu dữ liệu:**
-- Tự động sao lưu dữ liệu mỗi lần chạy chương trình.
-
-📦 **4. Hướng dẫn tải, biên dịch, các tập tin và thư viện**
-📂 **Cấu trúc tập tin:**
-
-- Main.cpp: Chương trình chính, luồng điều khiển menu
-
-- Auth.cpp: Xử lý đăng nhập, đăng ký, xác thực OTP
-
-- Data_io.cpp: Đọc/ghi dữ liệu người dùng và ví từ file
-
-- Menu.cpp: Giao diện menu cho user và admin
-
-- User_ops.cpp: Xử lý chức năng user/admin
-
-- Utils.cpp: Hàm tiện ích chung (OTP, password, clear screen...)
-
-- login_system.h: Định nghĩa cấu trúc, khai báo hàm
-
-- users.dat, users.bak: File dữ liệu và backup
-
-- pending_change.txt: Lưu thông tin các thay đổi cần xác nhận OTP
-
-📚 **Thư viện sử dụng:**
-
-- Chuẩn C++: <iostream>, <fstream>, <vector>, <string>, <iomanip>, <ctime>, <random>, <sstream>, <conio.h> (Windows)
-
-- Không dùng thư viện ngoài
-
-⚙️ **Cách tải/chạy/dịch chương trình:**
-
-**Tải mã nguồn:**
-
-- Copy tất cả file .cpp, .h vào cùng thư mục.
-
-**Dịch chương trình:**
-
-- Sử dụng Visual Studio 2022 hoặc g++ (chuẩn C++11 trở lên).
-
-**Nếu dùng dòng lệnh:**
-- css
-- Copy
-- Edit
-- g++ Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -o AccountManager
-- Nếu dùng Visual Studio: tạo project mới, thêm các file vào project, build là xong.
-
-- Không cần thư viện ngoài.
-
-▶️ **5. Hướng dẫn chạy chương trình & thao tác**
-🚀 **Khởi động chương trình:**
-
-- Lần đầu chạy, hệ thống tự tạo tài khoản nếu chưa có.
-
-📌 **Các thao tác cơ bản:**
-
-📝 **Đăng ký tài khoản mới:**
-
-- Chọn "Register", nhập username, họ tên, mật khẩu (có thể để trống để tự sinh).
-
-🔑 **Đăng nhập:**
-
-- Chọn "Login", nhập username, mật khẩu.
-
-👤 **Sau khi đăng nhập:**
-
-- User vào menu user: xem/đổi thông tin, chuyển điểm, xem lịch sử ví...
-
-- Admin vào menu admin: quản lý tài khoản, tạo/sửa/xóa user, xem lịch sử giao dịch hệ thống.
-
-🔄 **Chuyển điểm:**
-
-- Menu "Transfer Points" → nhập ID ví nhận → nhập số điểm → xác thực OTP.
-
-✏️ **Đổi thông tin cá nhân (họ tên/mật khẩu):**
-
-- Đổi xong sẽ sinh OTP, lần đăng nhập sau xác nhận OTP để áp dụng thay đổi.
-
-🗑️ **Xóa user:**
-
-- Chỉ admin được phép xóa tài khoản, không được xóa chính mình.
-
-💡 **Lưu ý:**
-
-- Dữ liệu lưu file, tự động sao lưu mỗi lần chạy.
-
-- Đổi tên/mật khẩu do admin thao tác hộ cần xác nhận OTP khi user login lần sau.
-
-- Chạy hoàn toàn trên console (dòng lệnh).
-
+Clone hoặc tải về từ GitHub:
+```bash
+git clone https://github.com/tenkho/duan_login_wallet.git
 
 
 📚 **Tài liệu tham khảo**
