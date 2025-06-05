@@ -115,6 +115,8 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 - **Register** | Đăng ký tài khoản mới
 - **Login**    | Đăng nhập (dành cho cả admin & user)
 - **Exit**     | Thoát chương trình
+  
+---
 
 👤 **User Menu**
 |-------------------------|-----------------------------|
@@ -124,6 +126,8 @@ https://github.com/anhhunglcd1/CPlusPlus-Project.git
 | **Transaction History** | Xem lịch sử giao dịch điểm  |
 | **Transfer Points**     | Chuyển điểm cho user khác   |
 | **Logout**              | Đăng xuất                   |
+
+---
 
 👑 **Admin Menu**
 
