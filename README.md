@@ -80,7 +80,7 @@
 
 ## 📥 Cách tải, biên dịch và chạy chương trình
 
-1️⃣ **Tải source code**
+### 1️⃣ **Tải source code**
 
 **Clone hoặc tải về từ GitHub:**
 ```bash
