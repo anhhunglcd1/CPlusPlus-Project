@@ -87,25 +87,25 @@ Clone hoặc tải về từ GitHub:
 https://github.com/anhhunglcd1/CPlusPlus-Project.git
 ```
 2️⃣ Biên dịch
+
 🖥️ Visual Studio 2022
+
 Mở project, thêm toàn bộ file .cpp và .h vào project mới.
 
 Nhấn Ctrl+Shift+B để Build Solution.
 
 🐧 Linux (g++ khuyến nghị)
-bash
-Copy
-Edit
+
 g++ -o wallet Main.cpp Auth.cpp Data_io.cpp Menu.cpp User_ops.cpp Utils.cpp -std=c++17
+
 3️⃣ Chạy chương trình
+
 Windows: Chạy wallet.exe hoặc nhấn F5 trong Visual Studio.
 
 Linux: Chạy lệnh:
 
-bash
-Copy
-Edit
 ./wallet
+
 🕹️ Hướng dẫn sử dụng & thao tác chức năng
 🚪 Menu chính
 pgsql
