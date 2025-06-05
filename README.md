@@ -2,7 +2,7 @@
 
 ---
 
-## 🚀 Giới thiệu dự án
+### 🚀 Giới thiệu dự án
 
 **Hệ thống đăng nhập, đăng ký và quản lý ví điểm thưởng** là ứng dụng mô phỏng hệ thống quản lý tài khoản người dùng kèm ví điểm thưởng, với xác thực bảo mật, phân quyền và đầy đủ chức năng chuyển điểm, đổi thông tin, ghi log lịch sử.
 
